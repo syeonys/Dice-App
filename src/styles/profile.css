@@ -1,0 +1,24 @@
+
+
+img {
+  width: 200px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  background-color: #fff;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.profile {
+  display: flex; flex-direction: column; gap: 10px; align-items: center;
+width: 200px; min-width: 120px;
+  padding: 1rem;
+  background: #eee;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
