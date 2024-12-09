@@ -11,25 +11,18 @@ import diceRed4 from '../assets/dice-red-4.svg';
 import diceRed5 from '../assets/dice-red-5.svg';
 import diceRed6 from '../assets/dice-red-6.svg';
 
-// color행,숫자 열
+
 const DICE_IMAGES={
-  blue:[diceBlue1,diceBlue2,diceBlue3,diceBlue4,diceBlue5,diceBlue6],
-  red:[diceRed1,diceRed2,diceRed3,diceRed4,diceRed5,diceRed6]
+    blue:[diceBlue1,diceBlue2,diceBlue3,diceBlue4,diceBlue5,diceBlue6],
+    red:[diceRed1,diceRed2,diceRed3,diceRed4,diceRed5,diceRed6]
 }
-
-//color, num에 값 들어오기 전 기본값 설정
-function Dice({color='red', num=1}) { 
-
-// 배열 데이터는 0부터 시작하니까 -1 해줘야됨
-  let diceImg=DICE_IMAGES [color] [num-1]
-
-  const alt = `${color}${num}`
-
+ 
+function Dice({color,num=1}) {
+    let diceImg=DICE_IMAGES[color][num-1];
+    const alt=`${color}${num}`
   return (
-    <div>
-      <img src={diceImg} alt={alt} />
-    </div>
-  );
+    <div><img src={diceImg} alt={alt} /></div>
+  )
 }
 
-export default Dice;
+export default Dice

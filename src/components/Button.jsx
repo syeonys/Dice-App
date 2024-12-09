@@ -1,13 +1,11 @@
-
 import '../styles/Button.css'
-
-function Button({ children,onClick }) {
-
+function Button({children,onClick,color}) {
+  const classNames=`button ${color}`
   return (
-    <div>
-      <button className='Button' onClick={onClick}>{children}</button>
-    </div>
-  );
+    <div className="Button">
+    <button onClick={onClick}  className={classNames}> {children}</button>
+      </div>
+  )
 }
 
-export default Button;
+export default Button

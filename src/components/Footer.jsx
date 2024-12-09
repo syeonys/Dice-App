@@ -1,10 +1,9 @@
-const Footer = () => {
+function Footer() {
   return (
     <div>
-      <h2>Footer 영역</h2>
-      <h4>seoyeoniverse &copy; All right </h4>
+       <h2>heopoint &copy; All rights reserved 2024</h2>
     </div>
-  )
+  );
 }
 
 export default Footer;
